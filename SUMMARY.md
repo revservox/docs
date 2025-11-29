@@ -1,0 +1,48 @@
+# Table of contents
+
+* [Introduction](README.md)
+* [Position Analytics](position-analytics/README.md)
+  * [Uniswap v3 Positions](position-analytics/uniswap-v3-positions.md)
+  * [Uniswap v2 Positions](position-analytics/uniswap-v2-positions.md)
+  * [Detecting staked LP tokens](position-analytics/detecting-staked-lp-tokens.md)
+* [Liquidity incentives](liquidity-incentives/README.md)
+  * [Time-vested v3 Staker](liquidity-incentives/time-vested-v3-staker.md)
+  * [Migrating from Mainnet](liquidity-incentives/migrating-from-mainnet/README.md)
+    * [To Optimism](liquidity-incentives/migrating-from-mainnet/to-optimism.md)
+    * [To Polygon](liquidity-incentives/migrating-from-mainnet/to-polygon.md)
+* [Open Positions](open-positions.md)
+* [Initiator](initiator/README.md)
+  * [Start providing liquidity](initiator/start-providing-liquidity.md)
+* [Auto-compounder](auto-compounder/README.md)
+  * [User Guide](auto-compounder/user-guide.md)
+  * [Performance improvement](auto-compounder/performance-improvement.md)
+* [Position Management](position-management.md)
+* [Auto-Exit](auto-exit.md)
+* [Auto-Range](auto-range.md)
+* [Revert Lend](revert-lend/README.md)
+  * [Borrowing](revert-lend/borrowing.md)
+  * [Lending](revert-lend/lending.md)
+  * [Repaying](revert-lend/repaying.md)
+  * [Withdrawing](revert-lend/withdrawing.md)
+  * [Leverage](revert-lend/leverage.md)
+  * [Liquidations](revert-lend/liquidations.md)
+
+## TECHNICAL DOCS
+
+* [Auto-compounder](technical-docs/auto-compounder.md)
+* [Backtester](technical-docs/backtester.md)
+* [Self-compounder](technical-docs/self-compounder.md)
+* [Auto-Exit](technical-docs/auto-exit.md)
+* [Auto-Range](technical-docs/auto-range.md)
+* [Revert Lend](technical-docs/revert-lend/README.md)
+  * [Configuration parameters](technical-docs/revert-lend/configuration-parameters.md)
+
+## Resources
+
+* [Contract Addresses](resources/contract-addresses.md)
+* [Security](resources/security.md)
+* [Auto-compounder v1 FAQ](resources/auto-compounder-v1-faq.md)
+* [Twitter](https://twitter.com/revertfinance)
+* [Discord](https://discord.gg/HXfxKHrRmf)
+* [GitHub](https://github.com/revert-finance)
+* [Blog](https://mirror.xyz/revertfinance.eth)
