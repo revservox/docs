@@ -2,6 +2,8 @@
 
 Check and easily track the performance of your positions on the following AMM protocols and chains or L2s.
 
+* Uniswap v4 on Ethereum
+* Uniswap v4 on Unichain
 * Uniswap v2 on Ethereum&#x20;
 * Sushiswap on Ethereum
 * Uniswap v3 on Ethereum
@@ -11,4 +13,4 @@ Check and easily track the performance of your positions on the following AMM pr
 * Uniswap v3 on Optimism
 * Uniswap v3 on BNB Chain
 
-Read about our [approach to detecting staked LP tokens](detecting-staked-lp-tokens.md) and also breakdowns for our analytics dashboards for [Uniswap V2](uniswap-v2-positions.md) and [Uniswap V3](uniswap-v3-positions.md).
+Read about our [approach to detecting staked LP tokens](detecting-staked-lp-tokens.md) and also breakdowns for our analytics dashboards for [Uniswap V2](uniswap-v2-positions.md), [Uniswap V3](uniswap-v3-positions.md), and [Uniswap V4](uniswap-v4-positions.md).

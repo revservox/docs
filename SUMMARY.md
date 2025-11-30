@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Position Analytics](position-analytics/README.md)
+  * [Uniswap v4 Positions](position-analytics/uniswap-v4-positions.md)
   * [Uniswap v3 Positions](position-analytics/uniswap-v3-positions.md)
   * [Uniswap v2 Positions](position-analytics/uniswap-v2-positions.md)
   * [Detecting staked LP tokens](position-analytics/detecting-staked-lp-tokens.md)
