@@ -4,8 +4,6 @@ Liquidity providers not only can initiate their positions from Revert, but they 
 
 Revert now saves you the hassle of swapping your assets, if you only have one of them, or even none, to create the perfect ratio when adding more liquidity and also when withdrawing or claiming.
 
-Position management features are currently supporting Uniswap V3 on Ethereum, Polygon, Optimism and Arbitrum networks, as well as Uniswap V4 on Ethereum mainnet and Unichain.
-
 {% hint style="success" %}
 Revert charges no fees for regular transactions but a 0.65% fee charge will apply on swap transactions.
 {% endhint %}
@@ -52,33 +50,13 @@ In Revert, the slippage tolerance can be customized under the "settings button" 
 Revert charges a 0.65% fee for swap transactions.
 {% endhint %}
 
-## Uniswap V4 Position Management
+## Supported Protocols
 
-Position management for Uniswap V4 is available on Ethereum mainnet and Unichain.
+Position management is currently available for:
 
-The position management interface works identically to Uniswap V3, supporting the same three core features using the v4utils smart contract:
-
-### Add liquidity
-
-Using the connected wallet's balances with a nifty slider to increase liquidity in the required proportions to any position.
-
-If you don't have the right proportions, toggle on the "enter custom amounts" option and we will swap them into the actual pool ratio. The functionality is identical to V3 (see [V3 Add liquidity](#add-liquidity) for UI details).
-
-### Withdraw liquidity
-
-After connecting your wallet, you are able to withdraw any amount of liquidity from a Uniswap V4 position you own. The withdrawal process matches the V3 experience (see [V3 Withdraw liquidity](#withdraw-liquidity) for details).
-
-### Claim fees
-
-Collect fees from Uniswap V4 positions using the same convenient interface as V3 (see [V3 Claim fees](#claim-fees) for details).
-
-{% hint style="success" %}
-Revert charges no fees for regular transactions but a 0.65% fee charge will apply on swap transactions, the same as V3.
-{% endhint %}
-
-### Slippage
-
-Slippage tolerance settings for Uniswap V4 work identically to V3. See the [Slippage](#slippage) section above for detailed information on configuring slippage for Add liquidity, Withdraw, and Swap operations.
+- **Uniswap V3:** Ethereum, Polygon, Optimism, Arbitrum
+- **Uniswap V4:** Ethereum mainnet, Unichain
+- **Aerodrome:** Base
 
 
 
