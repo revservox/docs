@@ -1,9 +1,15 @@
-# Initiator
+# Create Position
 
-[The initiator](https://revert.finance/#/initiator) helps users _initiate_ LP positions.
+[Create Position](https://revert.finance/#/discover) helps you discover liquidity pools and create positions across multiple protocols including Uniswap V3, V4, and Aerodrome.
 
-As the AMM landscape has evolved with the release of Uniswap V3, so too have the information needs of most LPs. Opening positions on concentrated liquidity AMMs requires making important decisions about price ranges, which can be greatly aided with historical data and analysis. Fees are a function of volume, time _in range-_ and the amount of _liquidity_ for a position and the rest of the pool. Where liquidity depends on the amount of capital and the concentration of said capital within a certain price range. All this is to say that running simulations on historical data can help us gain invaluable insights on how the captured fees may change based on the price range that LP selects.
+Browse pools by filtering on metrics like TVL, volume, fees APR, and rewards. Compare opportunities across networks and protocols, then create positions with visual price range selection and backtesting tools.
 
-The initiator allows users to tweak the different parameters a position is composed of, and receive immediate feedback on the effects, as well as being able to quickly switch between different fee tiers for any pair, or switch to a different pair and network altogether.
+## Key Features
 
-![](<../.gitbook/assets/image (15).png>)
+- **Discover Pools** - Browse available liquidity pools across Ethereum, Polygon, Arbitrum, Optimism, Base, and Unichain
+- **Filter & Sort** - Find pools by rewards, trending pools, new pools, or pools with lending support
+- **Pool Analytics** - View detailed charts for price, TVL, volume, and fees
+- **Top Positions** - See how other LPs have positioned their liquidity
+- **Visual Range Selection** - Set price ranges using preset buttons or manual inputs
+- **Backtesting** - Simulate how your position would have performed historically
+- **Multi-Protocol** - Create positions on Uniswap V3, V4, and Aerodrome from one interface

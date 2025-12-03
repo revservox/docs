@@ -1,39 +1,129 @@
-# Start providing liquidity
+# How to Create a Position
 
-The initiator works like a 4 step wizard that enables users to select each of the important parameters and understand how the proposed setup would have performed in a given time-frame. Finally it allows users to initiate the position given their selection and start providing liquidity.
+Creating a position with Revert is a discovery-first process that lets you find the best pools before opening positions.
 
-![Selecting pair and fee tier](<../.gitbook/assets/image (10).png>)
+## Browse Pools
 
-#### select pair&#x20;
+Start by browsing available liquidity pools across multiple protocols and networks.
 
-After selecting the network and protocol, the first step is to choose a pair of tokens which define the pool where you want to add liquidity.
+### Network & Token Filters
 
-#### select fee tier
+- **Any network** - Select specific networks (Ethereum, Polygon, Arbitrum, Optimism, Base, Unichain)
+- **Any tokens** - Filter by token pairs
+- **+ filters** - Opens advanced filtering panel
 
-Uniswap v3 allows pools to be created with different fee tiers. Users must select a fee tier at this point, though once the rest of the parameters have been selected, they can come back and quickly switch between the different fee tiers to see the effects on the backtesting simulation.
+Click the **"+ filters"** button to access additional filtering options:
 
-![Price range selection and amount input](<../.gitbook/assets/image (29).png>)
+- **Exchanges** - Filter by specific exchanges/protocols (Uniswap V3, V4, Aerodrome)
+- **Pool address** - Search for a specific pool by contract address
+- **TVL** - Set minimum and maximum Total Value Locked range (in USD)
+- **Fees APR** - Filter by fee APR percentage range
+- **Fees/TVL** - Filter by fee efficiency ratio
+- **Pool age** - Filter by pool age in days
 
-#### select price ranges
+Click **"Apply"** to activate filters or **"Clear"** to reset them.
 
-Use the price inputs to enter the minimum and maximum range you want to provide liquidity for. Updating the values will immediately update the charts to give you an idea how the historic price action, and current liquidity, look in the context of your selected range.
+### Quick Filters
 
-#### amounts to deposit
+- **Rewards** - Pools with active reward programs
+- **Trending** - Popular pools by volume or new positions
+- **New pools** - Recently created pools
+- **Loan** - Pools with lending/borrowing support
 
-In this step the user is required to input the amount of assets they want to provide liquidity with. Having previously selected the price range, the initiator will calculate the corresponding amount of the other token that must be deposited.&#x20;
+### Pool Metrics
 
-![](<../.gitbook/assets/image (17).png>)
+Each pool row displays:
 
-#### run backtester
+- **Pool/Fee Tier** - Token pair and fee percentage (e.g., WETH/USDC 0.05%)
+- **TVL** - Total Value Locked in the pool
+- **Volume** - Trading volume for the selected time period
+- **Fees** - Total fees generated
+- **Fees/TVL** - Fee efficiency ratio
+- **Age** - How long the pool has existed
+- **Fees APR** - Annual percentage rate from trading fees
+- **Rewards APR** - Annual percentage rate from external rewards (if available)
 
-Running the backtester having selected a position's parameters gives a user an idea how that position would have performed over the last 30 days. By default, the position performance is against HODL (holding both assets outside of the pool), but the backtester also offers the possibility to compare the position against holding either of the assets instead of the pair. So a user can, for example, compare the performance of a positions against holding only ETH.
+## Select a Pool
+
+Click the expand button (▼) on any pool row to view details and create a position.
+
+The expanded view shows:
+
+### Pool Overview
+
+- **Price Chart** - Historical price movement for the token pair
+- **TVL/Volume/Fees Graphs** - Performance metrics over time
+- **Current Prices** - Real-time prices for both tokens
+- **Top Positions** - Existing positions in this pool showing their ranges, sizes, and performance
+
+### Create Position Panel
+
+On the right side, you'll see the position creation interface.
+
+## Configure Your Position
+
+### Amounts to Deposit
+
+1. Select **"Same Tokens"** to deposit both tokens at current ratio, or choose a single token to swap
+2. Toggle **"Use prices ratio"** - When enabled, forces deposits to use the exact current pool ratio without performing any swap
+3. Enter amounts for each token (use **MAX** button to deposit full balance)
+4. Adjust **deposit slippage** if needed (default 1.0%)
+
+{% hint style="info" %}
+If "Use prices ratio" is disabled and you enter custom amounts, Revert may swap tokens to achieve the required ratio (0.65% swap fee applies).
+{% endhint %}
+
+### Price Range Selection
+
+Choose the price range where your liquidity will be active:
+
+#### Preset Buttons
+
+- **MIN** - Full range from minimum to current price
+- **1%** - ±1% from current price (very concentrated)
+- **5%** - ±5% from current price
+- **10%** - ±10% from current price
+- **20%** - ±20% from current price
+- **FULL** - Full range (all prices)
+
+#### Manual Entry
+
+Enter specific prices for your minimum and maximum range. The visual graph shows:
+
+- Current pool price
+- Your selected **NEW MIN** and **NEW MAX** prices
+- Where your liquidity will be active (green area)
+
+### Swap Preview
+
+If swapping tokens, you'll see:
+
+- Swap amounts and direction
+- 0.65% swap fee
+- Slippage tolerance (adjustable, default 0.50%)
+
+## Run Backtester (Optional)
+
+Click **"Run backtester"** to simulate how your position would have performed historically with the selected parameters.
+
+The backtester shows:
+
+- Projected fees earned
+- Impermanent loss/gain
+- Comparison vs. holding tokens
 
 {% hint style="info" %}
 **Fee dilution** refers to the dilution effect of adding more capital to a pool (assuming volume had remained constant). e.g., adding 10M to a 5M pool might reduce APR considerably more than adding 50k.
 {% endhint %}
 
-**Initiating**
+## Create Position
 
-After approving permissions to tokens, if required, click o the green **"Initiatie position"** button to initiate the position and start providing liquidity.
+Review the **Transaction summary** showing:
 
-The initiator works directly with the Uniswap v3 contracts, so initiating a position will result in an NFT in your wallet, exactly like it would if using the Uniswap UI directly.<br>
+- Expected amounts to add
+- Minimum amounts after slippage
+- Estimated gas costs
+
+Click **"Create [TOKEN/TOKEN] position"** to confirm and create your position.
+
+After approving token permissions (if needed), the transaction will create your position NFT directly with the protocol's contracts.
