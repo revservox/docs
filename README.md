@@ -10,10 +10,10 @@ We believe AMMs are going to become a fundamental part of financial markets in t
 
 Whether you're new to liquidity provision or an experienced LP, Revert provides tools to help you succeed:
 
-- **Track Performance** - View detailed analytics for your Uniswap v2, v3, and v4 positions across multiple chains including Ethereum, Polygon, Arbitrum, Optimism, and Unichain
+- **Track Performance** - View detailed analytics for your Uniswap v2, v3, v4, and Aerodrome positions across multiple chains including Ethereum, Polygon, Arbitrum, Optimism, Base, and Unichain
 - **Manage Positions** - Easily add or withdraw liquidity and claim fees directly from the Revert interface
-- **Automate Strategies** - Set up auto-compounding to reinvest fees, auto-range to adjust price ranges, or auto-exit to protect your positions
-- **Leverage Your LP Tokens** - Use Revert Lend to borrow against your Uniswap v3 positions as collateral
+- **Automate Strategies** - Set up auto-compounding to reinvest fees and AERO rewards, auto-range to adjust price ranges, or auto-exit to protect your positions
+- **Leverage Your LP Tokens** - Use Revert Lend to borrow against your Uniswap v3 and Aerodrome positions as collateral
 
 Explore the documentation to learn more about each feature and how to get started.
 

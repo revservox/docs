@@ -2,7 +2,16 @@
 
 ### Depositing LP Position and Borrowing Tokens
 
-In the Revert Lend protocol, users can deposit their Uniswap v3 Liquidity Provider (LP) position as collateral and borrow tokens in a single step. The LP position, represented as an NFT, is transferred to the Vault contract, effectively locking it in the protocol. This collateral allows the user to borrow tokens from the lending pool immediately. The amount of tokens that can be borrowed is determined by the collateral value of the LP position, based on the lower of the two assets’ collateral factors in the LP pair. Borrowed tokens are typically issued in a protocol-determined ERC-20 token, such as USDC, and are credited to the user's account for use in other investments or purposes. The LP position remains locked in the Vault as collateral until the loan is repaid.
+In the Revert Lend protocol, users can deposit their Uniswap v3 or Aerodrome Liquidity Provider (LP) position as collateral and borrow tokens in a single step. The LP position, represented as an NFT, is transferred to the Vault contract, effectively locking it in the protocol. This collateral allows the user to borrow tokens from the lending pool immediately. The amount of tokens that can be borrowed is determined by the collateral value of the LP position, based on the lower of the two assets' collateral factors in the LP pair. Borrowed tokens are typically issued in a protocol-determined ERC-20 token, such as USDC, and are credited to the user's account for use in other investments or purposes. The LP position remains locked in the Vault as collateral until the loan is repaid.
+
+### Using Aerodrome Positions as Collateral
+
+Aerodrome positions on Base can be used as collateral, but must first be staked with the [Gauge Manager](../aerodrome.md). The staking requirement ensures the position is properly wrapped for use with Revert Lend.
+
+When an Aerodrome position is used as collateral:
+- AERO rewards continue to accrue while the position is collateralized
+- You can claim or auto-compound AERO rewards at any time
+- The position can be managed like any other collateralized position
 
 <figure><img src="../.gitbook/assets/borrow 1.png" alt=""><figcaption></figcaption></figure>
 

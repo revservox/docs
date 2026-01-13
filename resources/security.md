@@ -42,4 +42,10 @@ PeckShield: [Report available here](https://github.com/peckshield/publications/b
 
 ## Revert V4Utils v1.0
 
-PeckShield: [Report available here](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-v4Utils-v1.0.pdf)<br>
+PeckShield: [Report available here](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-v4Utils-v1.0.pdf)
+
+## Gauge Manager (Aerodrome Integration)
+
+The Gauge Manager contracts for Aerodrome integration on Base have been audited by Cantina.
+
+Cantina: Report link pending publication

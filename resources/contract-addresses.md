@@ -10,6 +10,10 @@ V4utils on Ethereum Mainnet [https://etherscan.io/address/0xe162e02ed718f94ac703
 
 V4Utils on Unichain [https://uniscan.xyz/address/0x84b41aea9fe0d7a840d699d840c5fd78f20efe65](https://uniscan.xyz/address/0x84b41aea9fe0d7a840d699d840c5fd78f20efe65)
 
+#### Gauge Manager (Aerodrome on Base)
+
+[https://basescan.org/address/0x66a2481b784cf26103441ca6067f997f90d3e129](https://basescan.org/address/0x66a2481b784cf26103441ca6067f997f90d3e129)
+
 #### Revert Lend Contracts for Arbitrum
 
 V3Vault [https://arbiscan.io/address/0x74e6afef5705beb126c6d3bf46f8fad8f3e07825](https://arbiscan.io/address/0x74e6afef5705beb126c6d3bf46f8fad8f3e07825)

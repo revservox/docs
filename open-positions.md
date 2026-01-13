@@ -1,6 +1,6 @@
 # Open Positions
 
-​The Open Positions section lists the open active positions based on their overall performance on supported networks and exchanges.
+​The Open Positions section lists the open active positions based on their overall performance on supported networks and exchanges, including Aerodrome positions on Base.
 
 ![](<.gitbook/assets/top-positions (2).png>)
 

@@ -23,4 +23,8 @@ To set up auto-range on a position, you need to decide the source for paying pro
 
 Given the fact, that swaps are executed via 0x as a swap aggregator and many other swaps may happen at the same time, it is impossible to calculate a swap which results in the exact proportion of tokens to be added to the new position. This may lead to a few left-over tokens after minting the new position. These will be sent to the position owner in the same transaction.
 
-The operator (bots) are incentivized to maximize the capital added, because their gets their fees are calculated from the tokens added to the new position.
+The operator (bots) are incentivized to maximize the capital added, because their fees are calculated from the tokens added to the new position.
+
+## Aerodrome Support
+
+Auto-Range is fully supported for Aerodrome positions on Base. This includes positions that are staked via the [Gauge Manager](aerodrome.md) and positions used as collateral in Revert Lend.

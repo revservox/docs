@@ -14,3 +14,13 @@ In summary, leveraging in the Revert Lend protocol involves borrowing additional
 
 <figure><img src="../.gitbook/assets/leverage1.png" alt=""><figcaption></figcaption></figure>
 
+### Leveraging Aerodrome Positions
+
+Leverage is fully supported for Aerodrome positions on Base. When you leverage an Aerodrome position:
+
+- **Amplified Fee Earnings**: Your larger position earns more trading fees
+- **Amplified AERO Rewards**: The increased liquidity also earns more AERO rewards from the gauge
+- **Same Staking Requirement**: The position must be staked via the [Gauge Manager](../aerodrome.md) before leveraging
+
+The combination of amplified fee earnings and AERO rewards can significantly increase your returns, but remember that leverage also amplifies your exposure to impermanent loss and liquidation risk.
+

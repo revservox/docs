@@ -27,5 +27,7 @@ When auto-exit is configured to be executed when a position is still in-range th
 
 However, the operator (bots) are incentivized to maximize the capital used, because when swapping is configured, their fee is derived from the tokens which are successfully swapped to the target token.
 
+## Aerodrome Support
 
+Auto-Exit is not currently supported for Aerodrome positions on Base.
 

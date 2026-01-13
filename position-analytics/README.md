@@ -12,5 +12,8 @@ Check and easily track the performance of your positions on the following AMM pr
 * Uniswap v3 on Polygon
 * Uniswap v3 on Optimism
 * Uniswap v3 on BNB Chain
+* Aerodrome CL on Base
+
+For Aerodrome positions, you can track both trading fees and AERO rewards earned from gauge staking.
 
 Read about our [approach to detecting staked LP tokens](detecting-staked-lp-tokens.md) and also breakdowns for our analytics dashboards for [Uniswap V2](uniswap-v2-positions.md), [Uniswap V3](uniswap-v3-positions.md), and [Uniswap V4](uniswap-v4-positions.md).

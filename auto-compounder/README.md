@@ -18,6 +18,24 @@ Positions managed by the Compoundor contract can be auto-compounded at any time 
 
 A small fraction of the _collected-and-compounded_ fees are paid to the protocol and to compensate the accounts call the auto-compound function for their gas costs incurred. This performance fee is set to 2%.
 
+## AERO Reward Autocompounding
+
+For Aerodrome positions on Base, the auto-compounder supports compounding of AERO rewards in addition to trading fees. This is a distinct feature from fee compounding:
+
+**Fee Compounding** (available for all supported protocols):
+- Collects earned trading fees from your position
+- Swaps fees to the correct ratio for your position's price range
+- Redeposits as concentrated liquidity
+
+**AERO Reward Compounding** (Aerodrome positions only):
+- Collects earned AERO rewards from the gauge
+- Swaps AERO optimally into the position's token pair
+- Redeposits as concentrated liquidity in your existing range
+
+AERO autocompounding uses the Gauge Manager's `compoundRewards` function and applies the same 2% performance fee as fee compounding.
+
+To use AERO autocompounding, your Aerodrome position must be staked via the [Gauge Manager](../aerodrome.md).
+
 **Rebasing tokens support**
 
 The protocol is not intended to work with any kind of deflationary, rebasing, fee-on-transfer, or any non-standard erc20 behavior tokens.

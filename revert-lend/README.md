@@ -2,7 +2,11 @@
 
 ## What is Revert Lend?
 
-Revert Lend is a decentralized lending platform for Uniswap v3 Liquidity Providers. It lets users use their Uniswap v3 positions as collateral to borrow ERC-20 tokens. Even when their positions are used as collateral, users can still manage and optimize them, ensuring they maintain full control over their capital. Revert Lend is directly integrated in the normal position management UI on Revert.
+Revert Lend is a decentralized lending platform for Uniswap v3 and Aerodrome Liquidity Providers. It lets users use their LP positions as collateral to borrow ERC-20 tokens. Even when their positions are used as collateral, users can still manage and optimize them, ensuring they maintain full control over their capital. Revert Lend is directly integrated in the normal position management UI on Revert.
+
+### Aerodrome Support
+
+Aerodrome positions on Base are fully supported by Revert Lend. To use an Aerodrome position as collateral, it must first be staked via the [Gauge Manager](../aerodrome.md). Once staked, your position continues to earn AERO rewards even while being used as collateral for borrowing.
 
 ### Main functionality
 

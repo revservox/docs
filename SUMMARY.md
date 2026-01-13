@@ -15,6 +15,7 @@
 * [Position Management](position-management.md)
 * [Auto-Exit](auto-exit.md)
 * [Auto-Range](auto-range.md)
+* [Aerodrome Support](aerodrome.md)
 * [Revert Lend](revert-lend/README.md)
   * [Borrowing](revert-lend/borrowing.md)
   * [Lending](revert-lend/lending.md)
