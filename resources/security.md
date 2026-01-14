@@ -46,6 +46,10 @@ PeckShield: [Report available here](https://github.com/peckshield/publications/b
 
 ## Gauge Manager (Aerodrome Integration)
 
-The Gauge Manager contracts for Aerodrome integration on Base have been audited by Cantina.
+The Gauge Manager contracts for Aerodrome integration on Base have been audited by Cantina, PeckShield, and Hydn Security.
 
-Cantina: Report link pending publication
+Cantina: [Report available here](https://cantina.xyz/portfolio/cfb5a6a0-0061-4f14-ab5a-195ed6b7816d)
+
+PeckShield: [Report available here](https://github.com/peckshield/publications/tree/master/audit_reports/PeckShield-Audit-Report-Revert-v4Utils-v1.0.pdf)
+
+Hydn Security: [Report available here](https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Lend/HYDN%20-%20Revert%20Finance%20Lend%20-%20aero%20-%20Audit.pdf)
