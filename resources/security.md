@@ -6,8 +6,6 @@ Please reach us via email at [`hi@revert.finance`](mailto:hi@revert.finance) for
 
 ## Compoundor v1 <a href="#focus-v1" id="focus-v1"></a>
 
-We are running an [Immunefi Bug Bounty](https://immunefi.com/bounty/revert/) for the Compoundor Protocol contract with total rewards of up to $100,000.
-
 The protocol has had a successful audit process by Peckshield on August 2022. The audit revealed to 2 low-severity and 1 informal recommendation that have been addressed. The results are available [here](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-Compoundor-v1.0.pdf).
 
 ## V3Utils&#x20;

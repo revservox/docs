@@ -31,7 +31,7 @@ Two percent of the compounded fees. This amount is modifiable by the contract de
 
 When you activate auto-compounding for a position you transfer it to the Compoundor contract. You are able to withdraw your position at any time, but you are subject to the following risks while your position is owned by the contract.
 
-* There is smart-contract risk in the Compoundor protocol. We are running an [Immunefi Bug Bounty](https://immunefi.com/explore/) for the Compoundor Protocol contract with total rewards of up to $100,000. Depending on demand, we may hire a formal audit.
+* There is smart-contract risk in the Compoundor protocol.
 * Compounding fees will often require swapping some amount of the uncollected fees so that they are at ratio that maximizes the amount of new liquidity added for each position. The PNL for these swaps will depend on what happens with the asset pair prices, they can be negative, and the extra fees accrued from auto-compounding might not make up for that loss.
 
 ### Will my position be constantly auto-compounding
