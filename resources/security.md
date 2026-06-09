@@ -41,3 +41,7 @@ PeckShield: [Report available here](https://github.com/peckshield/publications/b
 ## Revert V4Utils v1.0
 
 PeckShield: [Report available here](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-v4Utils-v1.0.pdf)<br>
+
+## Revert Lend on Aerodrome Slipstream (Base)
+
+The Aerodrome Slipstream deployment of Revert Lend, including the GaugeManager custody layer and the AERO auto-compounding, was reviewed through a competitive audit on [Cantina](https://cantina.xyz/). The full report is [available here](https://github.com/revert-finance/lend/blob/aerodrome-slipstream/report_cli_cantina_efb6f308_f13b_4110_aff8_0d67181608dd_revert_finance.pdf).

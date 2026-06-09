@@ -18,6 +18,10 @@ Positions managed by the Compoundor contract can be auto-compounded at any time 
 
 A small fraction of the _collected-and-compounded_ fees are paid to the protocol and to compensate the accounts call the auto-compound function for their gas costs incurred. This performance fee is set to 2%.
 
+**Aerodrome AERO rewards**
+
+On Aerodrome positions on Base, auto-compounding reinvests the position's emitted **AERO rewards** rather than swap fees. The mechanics and fees differ slightly, see [AERO auto-compounding](../aerodrome/aero-auto-compounding.md).
+
 **Rebasing tokens support**
 
 The protocol is not intended to work with any kind of deflationary, rebasing, fee-on-transfer, or any non-standard erc20 behavior tokens.

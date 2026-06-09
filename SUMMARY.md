@@ -22,6 +22,9 @@
   * [Withdrawing](revert-lend/withdrawing.md)
   * [Leverage](revert-lend/leverage.md)
   * [Liquidations](revert-lend/liquidations.md)
+* [Aerodrome on Base](aerodrome/README.md)
+  * [Staking & AERO rewards](aerodrome/staking-and-rewards.md)
+  * [AERO auto-compounding](aerodrome/aero-auto-compounding.md)
 
 ## TECHNICAL DOCS
 

@@ -57,6 +57,28 @@ FlashLoanLiquidator\
 
 
 
+#### Aerodrome on Base
+
+These are the contracts for the Aerodrome Slipstream deployment on Base, covering lending, gauge custody, automation, and AERO auto-compounding. See [Aerodrome on Base](../aerodrome/README.md) for what they do.
+
+V3Vault [https://basescan.org/address/0x1EF7C181188687e20A9750714f1b9DE6F70f17C0](https://basescan.org/address/0x1EF7C181188687e20A9750714f1b9DE6F70f17C0)
+
+V3Oracle [https://basescan.org/address/0x82722327E45E86a0F2107746F423f612139b0952](https://basescan.org/address/0x82722327E45E86a0F2107746F423f612139b0952)
+
+InterestRateModel [https://basescan.org/address/0x9E29b74336A0D698AD600b3e52729bFda85e0564](https://basescan.org/address/0x9E29b74336A0D698AD600b3e52729bFda85e0564)
+
+LeverageTransformer [https://basescan.org/address/0xF4fCBaB7D092A0b46438DBBaa21333f7F07137EC](https://basescan.org/address/0xF4fCBaB7D092A0b46438DBBaa21333f7F07137EC)
+
+GaugeManager (gauge custody for staked positions) [https://basescan.org/address/0xc171F8c6ED8253151DE50ab839E3A468028113F2](https://basescan.org/address/0xc171F8c6ED8253151DE50ab839E3A468028113F2)
+
+V3Utils [https://basescan.org/address/0x2309A5aE06e86986a6f27b81a53cC31Fc1B55b0a](https://basescan.org/address/0x2309A5aE06e86986a6f27b81a53cC31Fc1B55b0a)
+
+Auto-Range / Auto-Compound [https://basescan.org/address/0xEB6127DcFB1E4107Dc1F3111151f779920c213Dd](https://basescan.org/address/0xEB6127DcFB1E4107Dc1F3111151f779920c213Dd)
+
+Auto-Exit [https://basescan.org/address/0xc35e20379C3267B5f63E569c25959031aC588203](https://basescan.org/address/0xc35e20379C3267B5f63E569c25959031aC588203)
+
+
+
 #### Auto-Range v3
 
 [https://arbiscan.io/address/0x5ff2195ba28d2544aed91e30e5f74b87d4f158de](https://arbiscan.io/address/0x5ff2195ba28d2544aed91e30e5f74b87d4f158de)
