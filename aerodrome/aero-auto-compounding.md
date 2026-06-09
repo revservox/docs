@@ -13,7 +13,7 @@ Once enabled, the auto-compounder periodically:
 3. **Reinvests** the result as additional liquidity in the position.
 4. **Restakes** the position so it keeps earning emissions.
 
-All of this happens in a single transaction, executed by Revert's operator account, so you never need to act yourself.
+All of this happens automatically in a single transaction, performed by the Revert protocol's audited contracts, so you never need to act yourself. Auto-compounding only reinvests your rewards back into your own position; it cannot move your funds anywhere else.
 
 ## When it compounds
 
