@@ -2,6 +2,8 @@
 
 Aerodrome rewards liquidity providers with AERO emissions on top of the swap fees a position already earns. Those emissions are only paid to positions that are **staked** in the pool's gauge. Revert handles staking for you so your position earns rewards from the moment it is created, and shows those rewards next to your fees.
 
+![AERO Rewards](../.gitbook/assets/AERO-rewards.png)
+
 ## How staking works on Revert
 
 When you create or deposit an Aerodrome position through Revert, the position is staked in the corresponding Aerodrome gauge. To do this on your behalf while keeping your funds safe, the staked position is held by Revert's **GaugeManager** contract, which is the custody layer for Aerodrome on Revert.
@@ -17,6 +19,8 @@ You keep full control of the position at all times. You can withdraw, remove liq
 ## Tracking your rewards
 
 On the position page you will see, alongside your fees:
+
+![Uncollected AERO Rewards](../.gitbook/assets/AERO-rewards-uncollected.png)
 
 - **Unclaimed rewards** - AERO that has accrued to your position and is not yet claimed.
 - **Claimed rewards** - AERO that has already been claimed for the position, including amounts that were claimed and reinvested by auto-compounding.
