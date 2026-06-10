@@ -4,6 +4,8 @@ Auto-compounding on Aerodrome reinvests the AERO emissions your position earns b
 
 This is the Aerodrome counterpart to the [Auto-compounder](../auto-compounder/README.md) you may already use for Uniswap fees. The difference is what gets compounded: on Uniswap it is the accrued swap fees, while on Aerodrome it is the **AERO rewards** emitted by the gauge.
 
+![AERO Auto-Compounding](../.gitbook/assets/AERO-auto-comp-cursor2.png)
+
 ## How it works
 
 Once enabled, the auto-compounder periodically:
@@ -23,6 +25,8 @@ A compound only happens when it is worthwhile. Compounding occurs once the accru
 
 On the position page, the auto-compound panel shows:
 
+![AERO Auto-Compounding](../.gitbook/assets/AERO-auto-comp.png)
+
 - **Rewards APY with auto-compounding** and the improvement over not compounding.
 - **Amounts reinvested** - the token amounts that have been compounded back into the position.
 - **Auto-comps executed** - how many times your position has been compounded.
@@ -32,3 +36,4 @@ These figures update as compounds happen, so you can see the effect on your posi
 ## Managing auto-compounding
 
 You can enable or disable auto-compounding from the position page at any time. While a position is auto-compounding you can still manage it normally: add or remove liquidity, change its range, or use it as collateral in [Revert Lend](../revert-lend/README.md).
+

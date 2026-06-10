@@ -2,6 +2,8 @@
 
 Revert supports [Aerodrome Slipstream](https://aerodrome.finance/) concentrated-liquidity positions on Base, with the same tooling you already use for Uniswap, plus the parts that are specific to Aerodrome.
 
+![AERO position on Revert](../.gitbook/assets/AERO-position.png)
+
 ## What you can do
 
 - **Track performance** of your Aerodrome Slipstream positions with Revert's full analytics: PnL, fee APR, rewards APR, impermanent loss, and historical charts.
