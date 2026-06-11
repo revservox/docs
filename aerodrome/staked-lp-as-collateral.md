@@ -26,6 +26,14 @@ For illustration: a $10,000 staked position at a 40% rewards APR accrues about $
 
 A position that is positive carry today can turn negative without any price movement in your pool. Check both legs, not just the rewards side.
 
+## Levering the position
+
+The carry can be levered: borrow USDC against the staked position, swap it to the pool's tokens, add them back to the same position, and restake. Revert executes the whole loop, including the unstake and restake around it, in a single transaction. The result is a larger staked position earning emissions on borrowed capital, with debt interest accruing until the loop is unwound. See [Leverage](../revert-lend/leverage.md) for the general mechanics.
+
+![Leverage loop for staked Aerodrome positions](../.gitbook/assets/AERO-lend-leverage-loop.png)
+
+Leverage scales both legs of the carry and shrinks the distance to liquidation. The risks below apply with more force, not less.
+
 ## Liquidation
 
 Staked collateral follows the same health rules as any Lend position: if the debt exceeds the collateral value, the loan becomes liquidatable. See [Liquidations](../revert-lend/liquidations.md).
