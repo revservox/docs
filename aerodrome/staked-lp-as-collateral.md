@@ -2,6 +2,8 @@
 
 Aerodrome positions staked through Revert can be used as collateral in [Revert Lend](../revert-lend/README.md) on Base. The position stays staked in its gauge for the entire life of the loan, so it keeps earning AERO emissions while it backs your debt.
 
+![Aerodrome position with an active USDC loan on Revert Lend](../.gitbook/assets/AERO-lend-collateral.jpg)
+
 ## How it works
 
 1. Deposit the position into the Revert Lend vault and borrow against it, in a single step. Borrowed tokens are issued in the vault's lending asset, USDC. See [Borrowing](../revert-lend/borrowing.md).
