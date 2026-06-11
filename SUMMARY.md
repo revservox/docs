@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Position Analytics](position-analytics/README.md)
+  * [How Revert measures performance](position-analytics/how-revert-measures-performance.md)
   * [Uniswap v4 Positions](position-analytics/uniswap-v4-positions.md)
   * [Uniswap v3 Positions](position-analytics/uniswap-v3-positions.md)
   * [Uniswap v2 Positions](position-analytics/uniswap-v2-positions.md)
