@@ -26,6 +26,10 @@
 * [Aerodrome on Base](aerodrome/README.md)
   * [Staking & AERO rewards](aerodrome/staking-and-rewards.md)
   * [AERO auto-compounding](aerodrome/aero-auto-compounding.md)
+* [Playbooks](playbooks/README.md)
+  * [Compound or collect](playbooks/compound-or-collect.md)
+  * [Backtest before funding](playbooks/backtest-before-funding.md)
+  * [The staked-collateral carry](playbooks/carry-on-staked-aerodrome.md)
 
 ## TECHNICAL DOCS
 
