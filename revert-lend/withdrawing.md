@@ -2,7 +2,7 @@
 
 Redeem your rlUSDC and you receive USDC at the current exchange rate: your principal plus your share of the interest accrued since you deposited.
 
-<figure><img src="../.gitbook/assets/Captura de pantalla 2024-08-30 a la(s) 12.14.05 p.m..png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Captura de pantalla 2024-08-30 a la(s) 12.14.05 p.m..png" alt=""><figcaption></figcaption></figure>
 
 ### When the pool is heavily utilized
 

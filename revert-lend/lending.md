@@ -2,7 +2,7 @@
 
 The other side of every loan is a lender earning the interest. Deposit USDC into the lending pool and you receive rlUSDC, a vault share following the ERC-4626 standard. Your yield is the interest borrowers pay, denominated in USDC: no lockups, no reward emissions to sell.
 
-<figure><img src="../.gitbook/assets/Captura de pantalla 2024-08-30 a la(s) 12.10.14 p.m..png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Captura de pantalla 2024-08-30 a la(s) 12.10.14 p.m..png" alt=""><figcaption></figcaption></figure>
 
 ### How the yield accrues
 
