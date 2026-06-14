@@ -1,6 +1,8 @@
 # Staking & AERO rewards
 
-Aerodrome rewards liquidity providers with AERO emissions on top of the swap fees a position already earns. Those emissions are only paid to positions that are **staked** in the pool's gauge. Revert handles staking for you so your position earns rewards from the moment it is created, and shows those rewards next to your fees.
+Aerodrome rewards liquidity providers with AERO emissions instead of swap fees. A position earns one or the other, never both: while staked in the pool's gauge it earns AERO emissions and its share of trading fees goes to veAERO voters; while unstaked it earns swap fees and no emissions.
+
+Emissions are only paid to staked positions, so Revert handles staking for you: your position earns rewards from the moment it is created, and those rewards are shown on the position page.
 
 ![AERO Rewards](../.gitbook/assets/AERO-rewards.png)
 
