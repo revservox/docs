@@ -59,7 +59,7 @@ Take a $10,000 position earning a 20% fee APR, so $2,000 per year in fees, with 
 
 - On a chain where a compound costs $0.05 of gas, the trigger is $5 of pending fees: hundreds of compounds a year, effectively continuous compounding. Projected APY is roughly 21.7% against the 20% simple rate.
 - At $12 of gas, the trigger is $1,200 of pending fees: fewer than two compounds a year, for an APY around 20.4%.
-- The same parameters on a $1,000 position at $12 gas never reach the trigger at all. The auto-compounder costs nothing in that case, but it also never fires.
+- The same parameters on a $1,000 position at $12 gas never reach the trigger at all. Activating the auto-compounder is a one-time authorization transaction, so you would pay that gas for something that never fires: no ongoing fees, but nothing gained.
 
 **When not to compound**
 
