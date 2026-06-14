@@ -6,7 +6,7 @@ Your position does not stop working when you borrow against it. Deposit the LP N
 
 ### How much you can borrow
 
-Your borrowing power is the position's value scaled by the pair's collateral factor, using the lower of the two tokens' factors. Borrowed funds are issued in the vault's lending asset, USDC, and are yours to deploy immediately.
+Your borrowing power is the position's value scaled by the pair's collateral factor, using the lower of the two tokens' factors, then held to a 95% safety buffer so a fresh loan does not start right at the liquidation line. The position page shows your actual available-to-borrow figure; size against that rather than the raw collateral-factor value. Borrowed funds are issued in the vault's lending asset, USDC, and are yours to deploy immediately.
 
 ### Interest
 

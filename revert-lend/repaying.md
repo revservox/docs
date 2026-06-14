@@ -1,6 +1,6 @@
 # Repaying
 
-Repay any amount at any time. There is no schedule and no penalty for early repayment: your debt is simply the borrowed amount plus accrued interest, tracked by the debt exchange rate, and every repayment reduces it directly.
+Repay in full whenever you want: there is no schedule and no penalty for early repayment, and your debt is simply the borrowed amount plus accrued interest, tracked by the debt exchange rate. Partial repayments work too, with one constraint: a partial repayment must leave your remaining debt at or above the vault's minimum loan size. To clear a balance below that, repay in full. Every repayment reduces your debt directly.
 
 <figure><img src="../.gitbook/assets/repay1.png" alt=""><figcaption></figcaption></figure>
 
