@@ -56,7 +56,7 @@ The denominator is the time-weighted average of capital actually in the position
 rewards APR = (rewards per second * AERO price * seconds per year / pool TVL) * 100
 ```
 
-This is a pool-wide floor that assumes liquidity is evenly distributed. A staked position concentrated tighter than the rest of the pool's staked liquidity earns more than this rate while in range; one parked out of range earns nothing. Emissions are re-voted weekly, so this number moves with each epoch.
+This is a pool-wide reference rate, not a floor: it assumes liquidity is evenly distributed, and your realized rate depends on where your liquidity sits. A staked position concentrated tighter than the rest of the pool's staked liquidity earns more than this while in range; a wider one earns less; one parked out of range earns nothing. Emissions are re-voted weekly, so this number moves with each epoch.
 
 ## Reading them together
 
