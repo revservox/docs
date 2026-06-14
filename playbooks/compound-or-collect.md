@@ -12,7 +12,7 @@ For illustration, take a $10,000 position earning a 20% fee APR ($2,000 per year
 
 - **On Base** (gas well under $1), compounds fire at a few dollars of pending fees: hundreds of compounds per year, effectively continuous. Projected APY is about 21.7% versus the 20% simple rate. Compounding is close to free money here.
 - **On mainnet** (call it $12 of gas), a compound fires only once pending fees reach about $1,200. That is fewer than two compounds per year: APY around 20.4%. Still positive, but thin.
-- **The same setup at $1,000 position size on mainnet** never compounds at all: the position earns $200 a year in fees and the trigger is $1,200. Activating the auto-compounder is a one-time authorization transaction, so here you would pay that gas for something that never fires: no ongoing fees, but nothing gained. Collect manually instead.
+- **The same setup at $1,000 position size on mainnet** effectively never compounds: the position earns about $200 a year in fees against a $1,200 trigger, so it would take roughly six years to fire once. Activating the auto-compounder is a one-time authorization transaction, so on any horizon you would realistically hold this position you are paying that gas for nothing: no ongoing fees, but nothing gained. Collect manually instead.
 
 The pattern: compounding improvement scales with fee APR, position size, and cheap gas. On L2s and Base it is nearly always worth it. On mainnet, do the arithmetic above with your own numbers first; the [performance improvement](../auto-compounder/performance-improvement.md) page has the full formulas.
 
