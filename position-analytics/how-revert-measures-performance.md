@@ -50,10 +50,10 @@ The denominator is the time-weighted average of capital actually in the position
 
 **Age.** Time since the position's first mint.
 
-**Rewards APR** (pool-level, Aerodrome). Annualized gauge emissions divided by pool TVL:
+**Rewards APR** (pool-level, Aerodrome). Annualized gauge emissions, valued at the reward-token price, divided by pool TVL:
 
 ```
-rewards APR = (rewards per second * seconds per year / pool TVL) * 100
+rewards APR = (rewards per second * AERO price * seconds per year / pool TVL) * 100
 ```
 
 This is a pool-wide floor that assumes liquidity is evenly distributed. A staked position concentrated tighter than the rest of the pool's staked liquidity earns more than this rate while in range; one parked out of range earns nothing. Emissions are re-voted weekly, so this number moves with each epoch.
