@@ -8,7 +8,7 @@ Use Uniswap v3 positions, or [Aerodrome positions on Base](../aerodrome/README.m
 
 - Borrow USDC against your LP position: [Borrowing](borrowing.md)
 - Lend USDC and earn the interest borrowers pay: [Lending](lending.md)
-- Repay any amount at any time, with outside funds or from the collateral itself: [Repaying](repaying.md)
+- Repay any time, in full or in part, with outside funds or from the collateral itself: [Repaying](repaying.md)
 - Withdraw your lent USDC: [Withdrawing](withdrawing.md)
 - Lever a position in a single transaction: [Leverage](leverage.md)
 - Understand how unhealthy loans are closed: [Liquidations](liquidations.md)
