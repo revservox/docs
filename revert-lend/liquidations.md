@@ -10,7 +10,9 @@ A loan is healthy while the collateral value exceeds the debt. The gap closes fr
 
 ### What a liquidation costs you
 
-Any account can liquidate an unhealthy loan: the liquidator repays your outstanding debt and receives collateral worth the debt plus a liquidation penalty. The penalty ranges from 2% to 10% of the debt value, scaling with how far the debt has run past the collateral value, so a loan caught just past the line costs far less than one deep underwater. Whatever value remains after debt and penalty is returned to you. You lose the penalty and the position, not everything.
+Any account can liquidate an unhealthy loan: the liquidator repays your outstanding debt and receives collateral worth the debt plus a liquidation penalty. The penalty ranges from 2% to 10% of the debt value, scaling with how far the debt has run past the collateral value, so a loan caught just past the line costs far less than one deep underwater.
+
+If the position is still worth more than your debt plus the penalty, the liquidator takes that much and the remainder is returned to you: you lose the penalty and keep the rest. That is the good case, and it depends on being liquidated in time. If a fast move pushes your debt plus penalty above the position's entire value, there is no remainder: the liquidator takes the whole position and you get nothing back, and the shortfall becomes bad debt that the pool's reserves, and ultimately lenders, absorb. Liquidation defends the pool's solvency, not your residual value. The only reliable protection is managing the distance before you reach the line.
 
 ### Liquidator bots
 
