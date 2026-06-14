@@ -52,3 +52,15 @@ The below chart uses the estimated gas cost values from the table above and valu
 
 
 ![](../.gitbook/assets/yoltWV7.png)
+
+**A worked example**
+
+Take a $10,000 position earning a 20% fee APR, so $2,000 per year in fees, with PREWARD = 0.02 and CREWARD = 0.01. A compound fires when the executor's share of pending fees (1%) covers the gas:
+
+- On a chain where a compound costs $0.05 of gas, the trigger is $5 of pending fees: hundreds of compounds a year, effectively continuous compounding. Projected APY is roughly 21.7% against the 20% simple rate.
+- At $12 of gas, the trigger is $1,200 of pending fees: fewer than two compounds a year, for an APY around 20.4%.
+- The same parameters on a $1,000 position at $12 gas earn about $200 a year against a $1,200 trigger, so the compounder would fire only once every six years or so. Activating it is a one-time authorization transaction, so on any horizon you would realistically hold the position you are paying that gas for nothing: no ongoing fees, but nothing gained.
+
+**When not to compound**
+
+If your position is small, your fee APR modest, and your chain's gas expensive, the improvement rounds to zero, and the table above lets you compute exactly that before activating anything. Compounding also grows your exposure to the pair: every compounded dollar is new capital subject to divergence loss. If you would not add fresh capital to the pool today, collecting the fees is the consistent choice. See the [Compound or collect](../playbooks/compound-or-collect.md) playbook for the full decision.

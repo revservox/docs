@@ -1,28 +1,18 @@
 # Revert Lend
 
-## What is Revert Lend?
+Revert Lend is lending built for liquidity providers. Your LP position becomes collateral without stopping being an LP position: it keeps earning, you keep managing it, and the automation tools keep working on it while it backs your loan.
 
-Revert Lend is a decentralized lending platform for concentrated-liquidity Liquidity Providers. It lets users use their Uniswap v3 positions, as well as [Aerodrome positions on Base](../aerodrome/README.md), as collateral to borrow ERC-20 tokens. Even when their positions are used as collateral, users can still manage and optimize them, ensuring they maintain full control over their capital. Aerodrome collateral keeps earning AERO rewards and can auto-compound while it backs a loan. Revert Lend is directly integrated in the normal position management UI on Revert.
+Use Uniswap v3 positions, or [Aerodrome positions on Base](../aerodrome/README.md), as collateral to borrow USDC. Aerodrome collateral stays staked in its gauge, keeps earning AERO, and can auto-compound while the loan is open. Lend is integrated directly into the normal position management UI: there is no separate app to learn.
 
-### Main functionality
+### What you can do
 
-Users may deposit their LP positions to get a loan - [Borrowing](borrowing.md)
+- Borrow USDC against your LP position: [Borrowing](borrowing.md)
+- Lend USDC and earn the interest borrowers pay: [Lending](lending.md)
+- Repay any time, in full or in part, with outside funds or from the collateral itself: [Repaying](repaying.md)
+- Withdraw your lent USDC: [Withdrawing](withdrawing.md)
+- Lever a position in a single transaction: [Leverage](leverage.md)
+- Understand how unhealthy loans are closed: [Liquidations](liquidations.md)
 
-Users may lend USDC to earn interest - [Lending](lending.md)
+### Automation keeps working
 
-Users may repay their loans partially or completely - [Repaying](repaying.md)
-
-Users may withdraw their lent USDC - [Withdrawing](withdrawing.md)
-
-Users may leverage their LP positions - [Leverage](leverage.md)
-
-Liquidators may liquidate unhealthy positions - [Liquidations](liquidations.md)
-
-### Automation
-
-The current Revert automation tools like Auto-Range and Auto-Compound work with collateralized positions, the same way they do as with normal LP positions. For Aerodrome collateral, this includes [AERO auto-compounding](../aerodrome/aero-auto-compounding.md).
-
-
-
-
-
+Auto-Range and Auto-Compound work on collateralized positions the same way they do on any other position. For Aerodrome collateral this includes [AERO auto-compounding](../aerodrome/aero-auto-compounding.md).

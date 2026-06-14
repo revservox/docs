@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Position Analytics](position-analytics/README.md)
+  * [How Revert measures performance](position-analytics/how-revert-measures-performance.md)
   * [Uniswap v4 Positions](position-analytics/uniswap-v4-positions.md)
   * [Uniswap v3 Positions](position-analytics/uniswap-v3-positions.md)
   * [Uniswap v2 Positions](position-analytics/uniswap-v2-positions.md)
@@ -26,6 +27,10 @@
   * [Staking & AERO rewards](aerodrome/staking-and-rewards.md)
   * [AERO auto-compounding](aerodrome/aero-auto-compounding.md)
   * [Using staked positions as collateral](aerodrome/staked-lp-as-collateral.md)
+* [Playbooks](playbooks/README.md)
+  * [Compound or collect](playbooks/compound-or-collect.md)
+  * [Backtest before funding](playbooks/backtest-before-funding.md)
+  * [The staked-collateral carry](playbooks/carry-on-staked-aerodrome.md)
 
 ## TECHNICAL DOCS
 

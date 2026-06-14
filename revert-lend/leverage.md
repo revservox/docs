@@ -1,16 +1,17 @@
 # Leverage
 
-### What Is Leverage?
+Leverage turns borrowing power into position size: borrow USDC against your position, swap it into the pool's tokens, and add them back to the same position, all in a single transaction. The result is a larger position earning on borrowed capital, with debt interest accruing until the loop is unwound.
 
-Leverage in the Revert Lend protocol refers to the strategy of amplifying a user’s exposure to market positions by borrowing additional tokens against their collateral and reinvesting those tokens into their position. This allows users to control a larger position than they would with their original capital, potentially increasing their returns. However, leveraging also increases risk, as losses can be magnified just as much as gains.
+### The loop
 
-### Borrow, Swap, and Reinvest
+1. **Borrow** against the position's collateral value, up to the pair's collateral factor.
+2. **Swap** the borrowed USDC into the position's tokens at the ratio the range requires.
+3. **Reinvest** the proceeds into the same position, increasing its liquidity.
 
-1. **Borrow**: The process begins with the user depositing their Uniswap v3 LP position as collateral into the Vault. Based on the value of this collateral and the protocol’s collateral factor, the user can borrow additional tokens from the lending pool. These borrowed tokens are typically issued in a protocol-determined ERC-20 token, like USDC.
-2. **Swap**: After borrowing the tokens, the user may choose to swap these borrowed tokens into other assets if needed. This step is crucial for aligning the borrowed assets with the assets in the user’s LP position. For example, if the borrowed tokens are in USDC but the user’s LP position is in ETH/DAI, the user might swap the USDC for ETH or DAI to reinvest in the LP position.
-3. **Reinvest**: The final step in leveraging is reinvesting the borrowed and swapped tokens back into the Uniswap v3 LP position. By adding these additional tokens to their existing position, the user effectively increases their exposure to the liquidity pool, thus leveraging their initial investment. This larger position can yield higher returns from trading fees and potential price appreciation, but it also comes with greater risk if the market moves unfavorably.
-
-In summary, leveraging in the Revert Lend protocol involves borrowing additional tokens against your LP position, possibly swapping those tokens for the assets needed, and then reinvesting them to increase the size of your position. This strategy can significantly enhance returns but requires careful management to avoid the increased risks associated with leverage.
+Each pass increases both the position and the debt, so the available headroom shrinks with every iteration: the collateral factor caps how far the loop can go. Unwinding works the same way in reverse, removing liquidity, swapping, and repaying in one transaction. See [Repaying](repaying.md).
 
 <figure><img src="../.gitbook/assets/leverage1.png" alt=""><figcaption></figcaption></figure>
 
+### What leverage actually does
+
+Leverage scales both sides of your trade. Fee income grows with the larger position; so do divergence loss and the debt's interest cost. The carry works while the position's income rate exceeds the borrow rate, and the borrow rate floats. A levered position also sits closer to liquidation than an unlevered one by construction: the same price move that dents an unlevered position can end a levered one. And where a direct borrow is held back to a 95% safety buffer, a leverage loop can be built right up to the collateral-factor limit, so a freshly maxed loop can sit at the edge of liquidation from the start. Size the loop so that the moves you consider normal for the pair leave your loan health intact. See [Liquidations](liquidations.md).

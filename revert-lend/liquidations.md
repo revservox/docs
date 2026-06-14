@@ -1,15 +1,19 @@
 # Liquidations
 
-### Position Health
+Liquidation is not an event that strikes from nowhere. It is a distance you can read and manage: the gap between your collateral value, after collateral factors, and your debt.
 
-In the Revert Lend protocol, the health of a position is determined by comparing the value of the collateral (the Uniswap v3 LP position) to the outstanding debt associated with the loan. A position is considered healthy if the collateral value exceeds the debt, ensuring that the loan is adequately secured. However, if the debt grows due to accumulating interest or if the collateral value decreases, the position may become unhealthy. When a position’s debt exceeds its collateral value, it becomes eligible for liquidation to protect the protocol and ensure that the loan is repaid.
+### Position health
+
+A loan is healthy while the collateral value exceeds the debt. The gap closes from two directions: interest accrues into the debt continuously, and the collateral side moves with pool prices and divergence loss. When the debt crosses above the collateral value, the loan becomes liquidatable.
 
 <figure><img src="../.gitbook/assets/liquidation1.png" alt="" width="373"><figcaption></figcaption></figure>
 
-### Who Can Liquidate?
+### What a liquidation costs you
 
-Once a position is deemed unhealthy and enters liquidation mode, any account in the protocol can initiate the liquidation process. To do this, a user calls the liquidate function, repays the outstanding debt of the position, and, in return, receives a liquidation reward. This reward, known as the liquidation penalty, ranges from 2% to 10% of the debt value, depending on how close the debt is to the collateral value. This system incentivizes users to actively monitor the protocol and liquidate risky positions, helping maintain the stability and integrity of the lending pool.
+Any account can liquidate an unhealthy loan: the liquidator repays your outstanding debt and receives collateral worth the debt plus a liquidation penalty. The penalty ranges from 2% to 10% of the debt value, scaling with how far the debt has run past the collateral value, so a loan caught just past the line costs far less than one deep underwater.
 
-### Liquidator Bots
+If the position is still worth more than your debt plus the penalty, the liquidator takes that much and the remainder is returned to you: you lose the penalty and keep the rest. That is the good case, and it depends on being liquidated in time. If a fast move pushes your debt plus penalty above the position's entire value, there is no remainder: the liquidator takes the whole position and you get nothing back, and the shortfall becomes bad debt that the pool's reserves, and ultimately lenders, absorb. Liquidation defends the pool's solvency, not your residual value. The only reliable protection is managing the distance before you reach the line.
 
-The Revert Lend protocol offers an open-source liquidation bot as a reference implementation. The bot’s source code is available at the [Revert Finance Liquidator-js GitHub Repository](https://github.com/revert-finance/liquidator-js). This bot monitors the health of all positions within the protocol and initiates liquidations when a position becomes unhealthy—i.e., when its debt exceeds the collateral value. While the Revert team runs this bot as a backstop, we encourage other liquidators to also operate and participate in the liquidation process to enhance decentralization and the protocol’s resilience. Liquidation penalties range from 2% to 10%, depending on the position’s risk level.
+### Liquidator bots
+
+Liquidation is open and permissionless by design. Revert publishes an open-source reference bot at the [liquidator-js repository](https://github.com/revert-finance/liquidator-js) and runs it as a backstop, but anyone can operate one, and we encourage it: more independent liquidators means unhealthy debt is cleared faster and the lending pool stays solvent for everyone.
