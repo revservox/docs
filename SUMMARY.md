@@ -41,6 +41,8 @@
 * [Auto-Range](technical-docs/auto-range.md)
 * [Revert Lend](technical-docs/revert-lend/README.md)
   * [Configuration parameters](technical-docs/revert-lend/configuration-parameters.md)
+* [Stable Hooks](technical-docs/stable-hooks/README.md)
+  * [Integrating swaps](technical-docs/stable-hooks/integrating-swaps.md)
 
 ## Resources
 
